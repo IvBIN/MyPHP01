@@ -78,28 +78,66 @@
 //?><!-- //#6-->
 
 <?php
-$a = $_POST['a'];
-$b = $_POST['b'];
-$operation = "divide";
-$isAvailableCalculation = true;
-$result = $a / $b;
+//$a = $_POST['a'];
+//$b = $_POST['b'];
+//$operation = "divide";
+//$isAvailableCalculation = true;
+//$result = $a / $b;
+//
+//?>
+<!--<form action="index.php" method="post">-->
+<!--    --><?php //if($isAvailableCalculation == false){
+//        echo "Вычисления не доступны";
+//    }
+//    else{
+//        echo "Вычисления доступны";
+//    }?>
+<!--    <p><input type="text" name="a" placeholder="Введите первое число"></p>-->
+<!--    <p><input type="text" name="b" placeholder="Введите второе число"></p>-->
+<!--    <p><select>-->
+<!--        <option>+</option>-->
+<!--        <option>-</option>-->
+<!--        <option selected value="$operation">/</option>-->
+<!--        <option>*</option>-->
+<!--    </select></p>-->
+<!--    <p><input type="submit" value="Выполнить"></p>-->
+<!--</form>-->
+<!--<h1>--><?php //= $result; ?><!--</h1> //#8 sam-->
 
-?>
-<form action="index.php" method="post">
-    <?php if($isAvailableCalculation == false){
-        echo "Вычисления не доступны";
-    }
-    else{
-        echo "Вычисления доступны";
-    }?>
-    <p><input type="text" name="a" placeholder="Введите первое число"></p>
-    <p><input type="text" name="b" placeholder="Введите второе число"></p>
-    <p><select>
-        <option>+</option>
-        <option>-</option>
-        <option selected value="$operation">/</option>
-        <option>*</option>
-    </select></p>
-    <p><input type="submit" value="Выполнить"></p>
-</form>
-<h1><?= $result; ?></h1>
+<?php
+//$x = 1;
+//$y = 2;
+//if ($x > 0 and $y >0){
+//    echo "Значение в 1-ой четверти";
+//}
+//elseif ($x > 0 and $y <0){
+//    echo "Значение в 2-ой четверти";
+//}
+//elseif ($x < 0 and $y <0){
+//    echo "Значение в 3-ой четверти";
+//}
+//elseif ($x < 0 and $y >0){
+//    echo "Значение в 4-ой четверти";
+//}
+//else{
+//    echo "Значение равно 0";
+//}
+//?><!-- //#Задание 1 W4-->
+
+<?php
+//$year = 1700;
+//if ($year % 4 ==0){
+//    if ($year % 400 ==0 or $year % 100 !=0){
+//    }
+//    echo "Високосный!";
+//}
+//else{
+//    echo "Не високосный!";
+//}
+//?><!-- //#Задание5 W4-->
+
+<?php
+$number = 967;
+
+
+?> //#Задание6 W4
