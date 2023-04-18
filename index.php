@@ -190,47 +190,49 @@
 //    if ($num % 7 == 0) {
 //        $summ += $num;
 //    }
-//    else{
-//        continue;
-//    }
 //}
 //echo $summ;
 //?><!-- //Задание#3 W5-->
 
 <?php
 //$str = '';
-//$number = 1;
-//for ($num = 1; $num <=10; $num ++) {
-//    $summ += $num;
+//$number = 12;
+//for ($i = 1; $i <= $number; $i++) {
+//    for ($j = 1; $j <= $i; $j++) {
+//        $str .= $i;
+//    }
 //}
-//    echo $summ;
-//?>
+//echo $str;
+//?><!--  // Задание #4 W5-->
 
 <?php
-//
-//for ($i =1; $i<= 10; $i++){
-//    echo "Пункт №".$i. "<br/>";
-//}
-//?>
-
-<?php //
 //echo "<ul>";
-//$i =1;
-//while ($i <=10){
-//    echo "<li>"
+//$i = 1;
+//while ($i <= 10){
+//    echo "<li>Строка № $i</li>";
+//    $i++;
 //}
-//echo "</ul>Пункт";
-//?>
+//echo "</ul>";
+//?><!-- // Задание #5 w5-->
 
 <?php
-for ($num = 1; $num <= 10000; $num ++){
-    if (strpos($num,3) and $num % 5!=0){
+//for ($num = 1; $num <= 10000; $num ++){
+//    if (strpos($num,3) and $num % 5!=0){
+//
+//    }
+//    echo $num . "<br/>";
+//}
+//?><!-- // Задание #6 W5-->
 
+<?php
+$number = 9;
+for ($i = $number; $i >= 1; $i--){
+    for ($j = 1; $j <= $i; $j++){
+        echo $i;
     }
-    echo $num . "<br/>";
+    echo "<br/>";
 }
 ?>
-
 
 
 
