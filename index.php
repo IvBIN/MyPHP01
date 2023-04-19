@@ -217,23 +217,64 @@
 
 <?php
 //for ($num = 1; $num <= 10000; $num ++){
-//    if (strpos($num,3) and $num % 5!=0){
-//
+//    if (strpos($num,3) ==FALSE and $num % 5!=0){
+//        echo $num . "<br/>";
 //    }
-//    echo $num . "<br/>";
+////    echo $num . "<br/>";
 //}
 //?><!-- // Задание #6 W5-->
 
 <?php
-$number = 9;
-for ($i = $number; $i >= 1; $i--){
-    for ($j = 1; $j <= $i; $j++){
-        echo $i;
-    }
-    echo "<br/>";
-}
-?>
+//$number = 9;
+//for ($i = $number; $i >= 1; $i--){
+//    for ($j = 1; $j <= $i; $j++){
+//        echo $i;
+//    }
+//    echo "<br/>";
+//}
+//?>
 
+<?php
+//$arr = [15, 3.14, "Строка", [12]];
+//var_dump($arr);
+//$arr[] = "sky";
+//var_dump($arr);
+
+//foreach ($arr as $i){
+////    echo $i . "<br>";
+//    var_dump($i);
+
+//for ($i = 0; $i <count($arr); $i++){
+//    var_dump($arr[$i]);
+
+//$users = [
+//        [
+//            'name' => 'Иван',
+//            'surname' => 'Булгаков',
+//            'age' => '47'
+//        ],
+//        [
+//            'name' => 'Максим',
+//            'surname' => 'Ларионов',
+//            'age' => '14'
+//        ],
+//];
+//var_dump($users);
+//echo $users[0] ['name'] . " " . $users[0] ['surname'] . "<br> Тебе " . $users[0] ['age']
+//}
+
+$x = [];
+for ($i = 1; $i <= 10; $i++){
+    $x[] = rand(0, 10);
+}
+    $summ += $x[$i];
+
+//for ($j = 0; $j < count($x); $j++){
+//    $x[$j] = "$x[$j]$j";
+//}
+//var_dump($x); //Задание 2 W6
+var_dump($x);
+echo $summ;
 
 
 
