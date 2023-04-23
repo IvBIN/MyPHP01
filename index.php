@@ -263,18 +263,27 @@
 //echo $users[0] ['name'] . " " . $users[0] ['surname'] . "<br> Тебе " . $users[0] ['age']
 //}
 
-$x = [];
-for ($i = 1; $i <= 10; $i++){
-    $x[] = rand(0, 10);
-}
-    $summ += $x[$i];
-
-//for ($j = 0; $j < count($x); $j++){
-//    $x[$j] = "$x[$j]$j";
+//$x = [];
+//for ($i = 1; $i <= 10; $i++){
+//    $x[] = rand(0, 10);
 //}
-//var_dump($x); //Задание 2 W6
-var_dump($x);
-echo $summ;
+//    $summ += $x[];
+//
+////for ($j = 0; $j < count($x); $j++){
+////    $x[$j] = "$x[$j]$j";
+////}
+////var_dump($x); //Задание 2 W6
+//var_dump($x);
+//echo $summ; // Задание 3 W6
 
-
-
+$arr = [
+        0 => ['name' => 'Коля', 'salary' => 300],
+        1 => ['name' => 'Вася', 'salary' => 400],
+        2 => ['name' => 'Петя', 'salary' => 500],
+];
+foreach ($arr as $item){
+    foreach ($item as $key => $value){
+        echo "<$key> <$value>";
+    }
+    echo "<br>";
+} // Задание 4 W6
