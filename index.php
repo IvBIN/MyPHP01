@@ -276,14 +276,69 @@
 //var_dump($x);
 //echo $summ; // Задание 3 W6
 
-$arr = [
-        0 => ['name' => 'Коля', 'salary' => 300],
-        1 => ['name' => 'Вася', 'salary' => 400],
-        2 => ['name' => 'Петя', 'salary' => 500],
-];
-foreach ($arr as $item){
-    foreach ($item as $key => $value){
-        echo "<$key> <$value>";
-    }
-    echo "<br>";
-} // Задание 4 W6
+//$arr = [
+//        0 => ['name' => 'Коля', 'salary' => 300],
+//        1 => ['name' => 'Вася', 'salary' => 400],
+//        2 => ['name' => 'Петя', 'salary' => 500],
+//];
+//foreach ($arr as $item){
+//    echo $item['name'] ."-". $item['salary'];
+//    echo "<br>";
+//} // Задание 4 W6
+
+
+//$arr =[14, 57, -56, 115, 99];
+//echo $arr[count($arr) - 1];
+// Задание 1 W7
+
+//$arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+//$separ ='-';
+//echo implode($separ, $arr);
+// Задание 2 W7
+
+//$arr1 = [1, 2, 3];
+//$arr2 = ["a", "b", "c"];
+//$arr3 = array_merge($arr1, $arr2);
+//echo $arr3;
+//var_dump($arr3);
+//// Задание 3 W7
+
+//$arr = ["a", "b", "c", "d", "e"];
+//$arr = array_map(function ($upp) {
+//    return strtoupper($upp);
+//}, $arr);
+//var_dump($arr);
+//// Задание 4 W7
+
+//$arr = ['a', '-', 'b', '-', 'c', '-', 'd'];
+//$del = array_splice($arr, 1, 1);
+//var_dump($del);
+//var_dump($arr);
+// Задание 5 W7
+
+//$arr = ["a", "b", "c", "d", "e"];
+//$del1 = array_splice($arr, 0, 1,"!");
+//$del2 = array_splice($arr, 3,1,"!!");
+//var_dump($del1);
+//var_dump($del2);
+//var_dump($arr);
+// Задание 6 W7
+
+
+//$arr = ["a", "b", "c", "b", "a"];
+//$uniq = array_unique($arr);
+//var_dump($uniq);
+////Задание 7 W7
+
+$arr = ['a'=>1, 'b'=>2, 'c'=>3];
+$rand = array_rand($arr,3);
+var_dump($rand);
+//Задание 8 W7
+
+
+
+
+
+
+
+
