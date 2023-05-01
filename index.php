@@ -429,10 +429,20 @@
 //cut("Рекогнасцировка");
 ////Задание 4 W8
 
-function grammNum($num, $forms){
-    $nn = abs((abs($num % 100) < 21) ? ($num % 100) : ($num % 10));
-    return (($nn == 1) ? $num . $forms[0] : (($nn > 1 and $nn < 5) ? $num . $forms[1] : $num . $forms[2]));
-
- }
-echo grammNum(51,['яблоко', 'яблока', 'яблок']);
+//function grammNum($num, $forms){
+//    $nn = abs((abs($num % 100) < 21) ? ($num % 100) : ($num % 10));
+//    return (($nn == 1) ? $num . $forms[0] : (($nn > 1 and $nn < 5) ? $num . $forms[1] : $num . $forms[2]));
+//
+// }
+//echo grammNum(51,['яблоко', 'яблока', 'яблок']);
 //Задание 5 W8
+
+//*** ЗАНЯТИЕ  9 ***
+
+$strBit1 = "100011";
+$strBit2 = "11111111";
+if (strlen($strBit1) < 8 and strlen($strBit1) > 8){
+    $strBit1 = str_pad($strBit1, 8, 1);
+}
+$strBit3 =$strBit1^$strBit2;
+echo $strBit3;
