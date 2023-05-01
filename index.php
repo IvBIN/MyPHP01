@@ -330,15 +330,109 @@
 //var_dump($uniq);
 ////Задание 7 W7
 
-$arr = ['a'=>1, 'b'=>2, 'c'=>3];
-$rand = array_rand($arr,3);
-var_dump($rand);
+//$arr = ['a'=>1, 'b'=>2, 'c'=>3];
+//$rand = array_rand($arr,1);
+//var_dump($rand);
 //Задание 8 W7
 
+//$arr = ["a", "b", "c", "b", "a"];
+//$count = array_count_values($arr);
+//var_dump($count);
+////Задание 9 W7
 
+//*** ЗАНЯТИЕ 8 (W8) ***
 
+//function displayInfo($name, $age = 18) {
+//    echo "<div> Имя: {$name}<br>Возраст: {$age}</div><hr>";
+//}
+//displayInfo("Tom", 26);
+//displayInfo("Bob", 30);
+//displayInfo("John");
 
+//function sumNums(...$numbers)
+//{
+//    $result = 0;
+//    foreach ($numbers as $number) {
+//        $result += $number;
+//    }
+//   echo "<p>Сумма: $result</p>";
+//}
+//sumNums(1,2,4,2,5);
+//sumNums(100,2,4,2,5);
+//sumNums(45);
 
+//function multiplyNumbers(...$numbers){
+//    $result = 1;
+//    foreach ($numbers as $number) {
+//        $result *= $number;
+//    }
+//    return $result;
+//}
+//
+//$multi = multiplyNumbers(2,3,4,5);
+//echo $multi . '<br>';
+//echo  12 + $multi;
+//echo multiplyNumbers(4,5);
+//echo 12 + multiplyNumbers(4,5);
 
+//*** Анонимные функции ***
+//function welcome($message)
+//{
+//    $message();
+//}
+//welcome(function ()
+//{
+//    echo "Hello!";
+//});
 
+//function personInfo($name, $address, $age){
+//    echo "<div>Имя: {$name}<br>Адрес: {$address}<br>Возраст: {$age}</div><hr>";
+//}
+//
+//personInfo("Tom","Tulip str.,1122, Bronx","28");
+//personInfo("Bob","Washigton str.,287, NY","31");
+//personInfo("Collin","River str.,463, Sidney","27");
+////Задание 1 W8
 
+//function getResult(...$numbers)
+//{
+//    $result = 0;
+//    foreach ($numbers as $number) {
+//        $result += $number;
+//    }
+//    echo $result;
+//}
+//getResult(2,5,"sum");
+////Задание 2 W8
+
+//function personInfo($name, $address, $age){
+//    $yy = abs((abs($age % 100) < 21) ? ($age % 100) : ($age % 10));
+//    $grammar = (($yy == 1) ? "год" : (($yy > 1 and $yy < 5) ? "года" : "лет"));
+//
+//    echo "<div>Имя: {$name}<br>Адрес: {$address}<br></div>";
+//    echo "<div>Возраст: {$age} {$grammar}<br></div><hr>";
+//}
+//
+//personInfo("Tom","Tulip str., 1122, Bronx","28");
+//personInfo("Bob","Washington str., 287, NY","31");
+//personInfo("Collin","River str., 463, Sidney","27");
+//Задание 3 W8
+
+//function cut($str, $n_str = 10) {
+////    if ($str = str($str)) {
+//
+//        echo "<div>Параметр 1: {$str}<br>Параметр 2: {$n_str}<br></div><hr>";
+//
+//}
+//cut("Противоречие", 6);
+//cut("Антимонополия", 12);
+//cut("Рекогнасцировка");
+////Задание 4 W8
+
+function grammNum($num, $forms){
+    $nn = abs((abs($num % 100) < 21) ? ($num % 100) : ($num % 10));
+    return (($nn == 1) ? $num . $forms[0] : (($nn > 1 and $nn < 5) ? $num . $forms[1] : $num . $forms[2]));
+
+ }
+echo grammNum(51,['яблоко', 'яблока', 'яблок']);
+//Задание 5 W8
