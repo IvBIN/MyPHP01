@@ -439,10 +439,25 @@
 
 //*** ЗАНЯТИЕ  9 ***
 
-$strBit1 = "100011";
-$strBit2 = "11111111";
-if (strlen($strBit1) < 8 and strlen($strBit1) > 8){
-    $strBit1 = str_pad($strBit1, 8, 1);
-}
-$strBit3 =$strBit1^$strBit2;
-echo $strBit3;
+//$strBit1 = "10001100";
+//$strBit2 = "11111111";
+////if (strlen($strBit1) < 8 and strlen($strBit1) > 8){
+////    $strBit1 = str_pad($strBit1, 8, 0);
+////}
+////foreach ($strBit1 as $value) {
+//    $strBit3 = $strBit1 ^ $strBit2;
+//echo $strBit3;
+////}
+
+
+//function bitnot($bin)
+//{
+//    $not = "";
+//    for ($i = 0; $i < strlen($bin); $i++)
+//    {
+//        if($bin[$i] == 0) { $not .= '1'; }
+//        if($bin[$i] == 1) { $not .= '0'; }
+//    }
+//    return $not;
+//}
+//echo bitnot(01110000);
